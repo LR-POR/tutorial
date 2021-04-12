@@ -1,0 +1,30 @@
+;;; -*- Mode: TDL; Coding: utf-8 -*-
+;;; Nouns
+
+dog := CommonNoun-noun-lex &
+  [ STEM < "dog" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_dog_n_rel" ].
+
+cat := CommonNoun-noun-lex &
+  [ STEM < "cat" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_cat_n_rel" ].
+
+;;; Adjectives
+
+;;; Verbs
+
+sleeps := intrans-3sg-verb-lex &
+  [ STEM < "sleeps" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_sleeps_v_rel" ].
+
+chases := trans-3sg-verb-lex &
+  [ STEM < "chases" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_chses_v_rel" ].
+
+;;; Determiners
+
+the := def-determiner-lex &
+  [ STEM < "the" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_the_q_rel" ].
+
+;;; Adverbs

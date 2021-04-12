@@ -1,0 +1,171 @@
+;;; -*- Mode: TDL; Coding: utf-8 -*-
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; Grammar of simple english
+;;; created at:
+;;;     Mon Apr 12 19:28:45 UTC 2021
+;;; based on Matrix customization system version of:
+;;;     Fri Feb  5 21:00:23 UTC 2021
+;;;
+;;; a very simple English grammar
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+; Type assigning empty mod list. Added to basic types for nouns, verbs and determiners.
+
+non-mod-lex-item := lex-item &
+  [ SYNSEM.LOCAL.CAT.HEAD.MOD < > ].
+
+;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; Matrix Type Addenda
+;;;;;;;;;;;;;;;;;;;;;;;;;
+
+basic-head-comp-phrase :+ [ SYNSEM [ LIGHT -,
+             LOCAL.CAT.MC #mc ],
+    HEAD-DTR.SYNSEM.LOCAL.CAT.MC #mc ].
+
+head :+ [ PRON bool,
+    FORM form ].
+
+png :+ [ PER person,
+    NUM number ].
+
+basic-head-opt-subj-phrase :+ [ HEAD-DTR.SYNSEM.LOCAL.CAT.VAL.COMPS < > ].
+
+;;;;;;;;;;;;;;
+;;; Features
+;;;;;;;;;;;;;;
+
+;;; Person
+
+person := *top*.
+1st := person.
+2nd := person.
+3rd := person.
+
+;;; Number
+
+number := *top*.
+singular := number.
+plural := number.
+
+;;; Form
+
+form := *top*.
+nonfinite := form.
+finite := form.
+present_participle := nonfinite.
+participle := nonfinite.
+infinitive := nonfinite.
+
+;;;;;;;;;;;;;;;;;;;
+;;; Lexical Types
+;;;;;;;;;;;;;;;;;;;
+
+;;; Nouns
+
+noun-lex := basic-noun-lex & basic-non-wh-word-lex & non-local-none-lex-item & no-hcons-lex-item & non-mod-lex-item &
+  [ ARG-ST < #spr >,
+    SYNSEM.LOCAL.CAT.VAL [ COMPS < >,
+                           SUBJ < >,
+                           SPEC < >,
+                           SPR < #spr &
+                                 [ LOCAL.CAT.HEAD det,
+                                   OPT - ] > ] ].
+
+CommonNoun-noun-lex := noun-lex.
+
+;;; Verbs
+
+verb-lex := basic-verb-lex & non-mod-lex-item & basic-non-wh-word-lex &
+  [ SYNSEM.LOCAL [ CAT.VAL [ SPEC < >,
+                             SUBJ < #subj > ],
+                   CONT.HOOK.XARG #xarg ],
+    ARG-ST.FIRST #subj &
+                 [ LOCAL [ CAT cat-sat &
+                               [ VAL [ SPR < >,
+                                       COMPS < > ] ],
+                           CONT.HOOK.INDEX #xarg ] ] ].
+
+intransitive-verb-lex := verb-lex & intransitive-lex-item &
+  [ SYNSEM.LOCAL.CAT.VAL.COMPS < >,
+    ARG-ST.FIRST.LOCAL.CAT.HEAD noun ].
+
+transitive-verb-lex := verb-lex & transitive-lex-item &
+  [ SYNSEM.LOCAL.CAT.VAL.COMPS < #comps >,
+    ARG-ST < [ LOCAL.CAT.HEAD noun ],
+             #comps &
+             [ LOCAL.CAT cat-sat &
+                         [ VAL [ SPR < >,
+                                 COMPS < > ],
+                           HEAD noun ] ] > ].
+
+intrans-3sg-verb-lex := intransitive-verb-lex &
+  [ SYNSEM.LOCAL.CAT [ VAL.SUBJ.FIRST.LOCAL.CONT.HOOK.INDEX.PNG [ NUM singular,
+                                                                  PER 3rd ],
+                       HEAD.FORM finite ] ].
+
+trans-3sg-verb-lex := transitive-verb-lex &
+  [ SYNSEM.LOCAL.CAT [ VAL.SUBJ.FIRST.LOCAL.CONT.HOOK.INDEX.PNG [ NUM singular,
+                                                                  PER 3rd ],
+                       HEAD.FORM finite ] ].
+
+;;; Complementizers
+
+;;; Others
+
+;;; Determiners
+;;; SPEC is non-empty, and already specified by basic-determiner-lex.
+
+determiner-lex := basic-determiner-lex & basic-non-wh-word-lex & norm-zero-arg & non-mod-lex-item &
+  [ SYNSEM.LOCAL.CAT.VAL [ SPR < >,
+                           COMPS < >,
+                           SUBJ < > ] ].
+
+def-determiner-lex := determiner-lex & no-icons-lex-item &
+  [ SYNSEM.L-QUE - ].
+
+;;; Adverbs
+
+;;;;;;;;;;;;;;;;;;;
+;;; Lexical Rules
+;;;;;;;;;;;;;;;;;;;
+
+;;; Lexical rule types
+
+;;;;;;;;;;;;;;;;;;;
+;;; Phrasal Types
+;;;;;;;;;;;;;;;;;;;
+
+;Constraint on MC used to be part of matrix.tdl
+;;it applies to all wo implementations, except for v2
+
+head-comp-phrase := basic-head-1st-comp-phrase & head-initial.
+
+subj-head-phrase := decl-head-subj-phrase & head-final &
+  [ HEAD-DTR.SYNSEM.LOCAL.CAT.VAL.COMPS < > ].
+
+; Rules for building NPs.  Note that the Matrix uses SPR for
+; the specifier of nouns and SUBJ for the subject (specifier) of verbs.
+
+head-spec-phrase := basic-head-spec-phrase & head-final.
+
+; Bare NP phrase.  Consider modifying the PRED value of the quantifier relation
+; introduced to match the semantic effect of bare NPs in your language.
+
+bare-np-phrase := basic-bare-np-phrase &
+  [ C-CONT.RELS.LIST < [ PRED "exist_q_rel" ] > ].
+
+basic-filler-phrase :+ [ SYNSEM.NON-LOCAL.SLASH.LIST < >,
+    ARGS < [ SYNSEM [ LOCAL #slash,
+                      NON-LOCAL.SLASH.LIST < > ] ],
+           [ SYNSEM.NON-LOCAL.SLASH.LIST < #slash > ] > ].
+
+extracted-subj-phrase := basic-extracted-subj-phrase &
+  [ SYNSEM.LOCAL.CAT.HEAD verb ].
+
+;;; Wh-question-related phrasal types
+
+;;;;;;;;;;;;;;;;;;
+;;; Coordination
+;;;;;;;;;;;;;;;;;;
+
+clause :+ [ SYNSEM.NON-LOCAL.QUE.LIST < > ].
