@@ -1,0 +1,12 @@
+1 the cat sleeps 1 17
+2 the dog chases the cat 1 29
+3 *the cat sleep 0 11
+4 *the dog chase the cat 0 20
+5 the cats sleep 1 15
+6 the dogs chase the cat 1 27
+7 *the cats sleeps 0 13
+8 *the dogs chases the cat 0 22
+
+;;; Total CPU time: 55 msecs
+;;; Mean edges: 19.25
+;;; Mean parses: 0.50

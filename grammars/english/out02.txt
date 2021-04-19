@@ -1,0 +1,8 @@
+1 the cat sleeps 1 13
+2 the dog chases the cat 1 23
+3 *the cat sleep 1 13
+4 *the dog chase the cat 1 23
+
+;;; Total CPU time: 19 msecs
+;;; Mean edges: 18.00
+;;; Mean parses: 1.00
