@@ -1,14 +1,10 @@
-This repository contains the presentation and the grammar files from a tutorial on using the LinGO Grammar Matrix for the implementation of HPSG grammars: 
+This repository contains the presentation and the grammars from a tutorial on using the LinGO Grammar Matrix for the implementation of HPSG grammars: 
 
 http://arademaker.github.io/blog/2021/04/05/grammar-matrix.html
 
-To create the LKB files of a grammar, visit the LinGO Grammar Matrix customization system:
-
-
+Each file whose name begins with "choices" represents a different version of a grammar. These files were created with the LinGO Grammar Matrix customization system:
 
 https://matrix.ling.washington.edu/customize/
 
-
-
-Then upload a choices file by clicking on "Choose file" and "Create Grammar" at the botton of the page.
-To the test the created grammar, run the script in the lkb folder with the LKB system (menu option LKB/Load/Complete grammar). Parse the test_sentences file to check which sentences the grammars parses.  
+To generate the LKB files of a grammar, first visit the LinGO Grammar Matrix customization system.Then upload a choices file by clicking on "Choose file" and "Create Grammar" at the botton of the page. Download the thusly created grammar files and store them in a local folder.
+To test the grammar, run the script in the lkb folder with the LKB system (menu option LKB/Load/Complete grammar). Parse the test_sentences file to check which sentences the grammars parses. The output of the different versions of the grammars are stored in the files whose names begin with "out".  
