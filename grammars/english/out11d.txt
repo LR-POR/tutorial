@@ -36,6 +36,6 @@
 36 *the dog can barking 0 15
 37 the cat must sleep 1 23
 
-;;; Total CPU time: 115 msecs
+;;; Total CPU time: 81 msecs
 ;;; Mean edges: 24.32
 ;;; Mean parses: 0.49

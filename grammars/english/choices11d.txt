@@ -6,6 +6,9 @@ language=simple english
 iso-code=sen
 punctuation-chars=discard-all
 archive=yes
+email=leonel.de.alencar@ufc.br
+affiliation=Federal University of Ceará
+motivation=for a class
 comment=a very simple English grammar
 vcs=git
 
