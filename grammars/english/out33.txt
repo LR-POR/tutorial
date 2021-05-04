@@ -1,0 +1,96 @@
+1 the cat chases the dog 1 45
+2 the dogs sleep 1 35
+3 the dog is killing the cat 1 128
+4 the dog sleeps 1 31
+5 *the dog is kill the cat 0 111
+6 the dogs are killing the cat 1 125
+7 *the dogs are kill the cat 4 160
+8 *the dogs is killing the cat 0 112
+9 the dog is sleeping 1 99
+10 the dogs are sleeping 1 96
+11 I am sleeping 1 108
+12 you are sleeping 1 108
+13 they are sleeping 1 108
+14 he is sleeping 1 112
+15 *he am sleeping 0 99
+16 *he are sleeping 0 99
+17 *I are sleeping 0 99
+18 *you is sleeping 0 103
+19 *you am sleeping 0 99
+20 *we am sleeping 0 99
+21 *we is sleeping 0 103
+22 *they is sleeping 0 103
+23 *they am sleeping 0 99
+24 we are sleeping 1 108
+25 *he has kill the dogs 0 90
+26 *he has killing the dogs 0 76
+27 he has killed the dogs 3 155
+28 *I have kill the dogs 4 184
+29 *I have killing the dogs 0 112
+30 I have killed the dogs 5 238
+31 the dog has been sleeping 0 288
+32 the dogs have been sleeping 0 474
+33 the dogs will kill the cat 3 149
+34 the dog will kill the cat 1 116
+35 I confirmed that the dogs sleep 1 90
+36 I confirm that the dogs sleep 1 99
+37 I have confirmed that the dogs sleep 5 348
+38 I am confirming that the dogs sleep 1 207
+39 what killed the dog 1 52
+40 which dog killed the cat 1 61
+41 who killed the cat 1 52
+42 which cats has the dog killed 1 87
+43 which cat has the dog killed 1 87
+44 who is sleeping 1 83
+45 who has killed the cat 2 114
+46 who has the cat killed 1 72
+47 the dog has slept 3 99
+48 the dog slept 1 30
+49 *the dog sleeped 0 19
+50 *the dog has sleeped 0 36
+51 the dog chased the cat 0 21
+52 the dog has chased the cat 0 38
+53 *the dog chaseed the cat 1 56
+54 *the dog has chaseed the cat 3 143
+55 I wonder who killed the cat 1 141
+56 I have wondered who killed the cat 5 609
+57 I am wondering who has killed the cat 1 1980
+58 I am wondering who is killing the cat 
+59 I am wondering who the dog has killed 3 425
+60 he asked if the cat is sleeping 1 175
+61 he asked whether the cat is sleeping 1 175
+62 he asked whether the cat is sleeping 1 175
+63 he asked whether the dog has killed the cat 3 367
+64 *he asked whether has the dog killed the cat 1 359
+65 he asked whether the cat is sleeping 1 175
+66 *he asked whether is the cat sleeping 0 264
+67 *he asked that the cat is sleeping 0 121
+68 *I reported if the dogs sleep 0 55
+69 *I reported whether the dogs sleep 0 55
+70 I reported that the dogs sleep 1 90
+71 I confirmed the dogs sleep 2 82
+72 I asked who is sleeping 0 385
+73 I asked who sleeps 1 91
+74 I asked who killed the cat 1 124
+75 *he asked the cat is sleeping 2 164
+76 I confirm that the dogs are sleeping 1 187
+77 I confirm that the cat is sleeping 1 190
+78 he depends on the cat 1 47
+79 the dog depends on him 0 40
+80 I agree with him 0 56
+81 the cat agrees with the dog 1 54
+82 *I agree with he 0 56
+83 *the cat agrees on the dog 0 34
+84 *the dog depends with him 0 30
+85 *the dog depends with the dog 0 34
+86 *the dog depends him 1 43
+87 *the dog depends the cat 1 45
+88 the dog depends on you 1 56
+89 I agree with you 1 81
+90 the dog's cat sleeps 1 43
+91 the cat of the dog sleeps 4 68
+92 is the cat sleeping 1 54
+
+;;; Total CPU time: 5393 msecs
+;;; Mean edges: 162.49
+;;; Mean parses: 1.04

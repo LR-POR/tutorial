@@ -1,0 +1,35 @@
+True negatives
+7 *magistra amat discipula 0 23
+9 *magistra discipula amat 0 22
+12 *illam discipula magistram amat 0 29
+15 *discipula pueram amat 0 18
+16 *discipula puer amat 0 20
+23 *discipula nautum amat 0 18
+24 *discipula naut amat 0 16
+True positives
+1 discipula cantat 1 17
+2 discipula magistram amat 1 31
+3 discipula amat magistram 1 32
+4 magistram discipula amat 1 31
+5 magistram amat discipula 1 32
+6 amat magistram discipula 1 31
+8 amat discipula magistram 1 31
+10 discipula illam magistram amat 1 40
+11 illa discipula magistram amat 1 40
+13 puer fabulam recitat 1 29
+14 discipula puerum amat 1 31
+17 discipulam puer amat 1 29
+18 magistra fabulam recitat 1 31
+19 puer cantat 1 15
+20 vir laborat 1 15
+21 magistra laborat 1 17
+22 discipula nautam amat 1 31
+25 illa discipula illas magistras amat 1 49
+27 illi agricolae illum nautam salutant 1 53
+False positives
+False negatives
+26 ille vir illos nautas salutat 0 31
+28 magistra mensam naut-Gen ornat 0 25
+29 magistra naut-Gen mensam ornat 0 26
+30 magistra mensam nautarum ornat 0 25
+31 magistra nautarum mensam ornat 0 26

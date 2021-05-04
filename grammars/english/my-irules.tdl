@@ -1,0 +1,31 @@
+;;; -*- Mode: TDL; Coding: utf-8 -*-
+;;; Inflecting Lexical Rule Instances
+
+%(letter-set (!s abcdefghijklmnopqrtuvwxyz))
+%(letter-set (!e abcdfghijklmnopqrstuvwxyz))
+
+plural-suffix :=
+%suffix (* s)
+plural-lex-rule.
+
+saxon-genitive-suffix :=
+%suffix (!s !s's) (s s')
+saxon-genitive-lex-rule.
+
+pst-suffix :=
+%suffix (!e !eed) (e ed) (sleep slept)
+;; %suffix (!e !eed) (e ed)
+pst-lex-rule.
+
+pres-3sg-suffix :=
+%suffix (* s)
+pres-3sg-lex-rule.
+
+pres-part-suffix :=
+%suffix (!e !eing) (e ing)
+pres-part-lex-rule.
+
+past-part-suffix :=
+%suffix (!e !eed) (e ed) (sleep slept)
+;; %suffix (!e !eed) (e ed)
+past-part-lex-rule.

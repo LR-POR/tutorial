@@ -1,0 +1,45 @@
+True negatives
+5 *the cats sleeps 0 17
+6 *the dogs chases the cat 0 28
+7 *the cat sleep 0 16
+8 *the dog chase the cat 0 28
+14 *the dog chaseed the cat 0 21
+16 *the dog sleeps the cat 0 27
+17 *the dog chased 0 17
+18 *the dog chases 0 16
+22 *the dog has following the cat 0 28
+23 *the dog is followed the cat 0 32
+24 *the dog is follow the cat 0 30
+25 *the dog has follow the cat 0 30
+26 *the dog will following the cat 0 28
+27 *the dog will followed the cat 0 32
+32 *the dog has chaseed the cat 0 24
+35 *the dog can barked 0 20
+36 *the dog can barking 0 17
+40 *the boys's dog sleeps 0 16
+True positives
+1 the cat sleeps 1 22
+2 the dog chases the cat 1 37
+3 the dogs chase the cat 1 39
+4 the cats sleep 1 23
+10 the dog barked 1 24
+11 the dogs barked 1 25
+12 the dogs chased the cat 1 41
+13 the dog chased the cats 1 41
+15 the dog followed the cat 1 40
+19 the dog is following the cat 1 40
+20 the dog has followed the cat 1 44
+21 the dog will follow the cat 1 42
+28 the dog has barked 1 28
+29 the dog has slept 1 28
+31 the dog has chased the cat 1 44
+33 the dog can bark 1 26
+34 the dog can chase the cat 1 42
+37 the cat must sleep 1 26
+38 the boy's dog sleeps 1 34
+39 the boys' dog sleeps 1 33
+41 the dog of the boy sleeps 1 44
+False positives
+9 *the cat sleeped 1 24
+30 *the dog has sleeped 1 28
+False negatives
