@@ -1,0 +1,8 @@
+;;; -*- Mode: TDL; Coding: utf-8 -*-
+singular-lex := singular-lex-rule.
+
+non-poss-lex := non-poss-lex-rule.
+
+pres-3pl-lex := pres-3pl-lex-rule.
+
+inf-lex := inf-lex-rule.
