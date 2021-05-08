@@ -1,0 +1,19 @@
+;;; -*- Mode: TDL; Coding: utf-8 -*-
+;;; Semantically Empty Lexical Entries
+
+is_gr := arg0e_gtr &
+  [ CONTEXT.RELS.LIST < [ ARG0.E [ TENSE present,
+                                   ASPECT progressive,
+                                   MOOD indicative ] ] >,
+    FLAGS.TRIGGER "is" ].
+
+has_gr := arg0e_gtr &
+  [ CONTEXT.RELS.LIST < [ ARG0.E [ TENSE present,
+                                   ASPECT perfective,
+                                   MOOD indicative ] ] >,
+    FLAGS.TRIGGER "has" ].
+
+will_gr := arg0e_gtr &
+  [ CONTEXT.RELS.LIST < [ ARG0.E [ TENSE future,
+                                   MOOD indicative ] ] >,
+    FLAGS.TRIGGER "will" ].
