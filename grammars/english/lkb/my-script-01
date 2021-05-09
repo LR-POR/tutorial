@@ -68,7 +68,7 @@
 ;;;
 (read-tdl-grammar-file-aux (lkb-pathname (parent-directory) "rules.tdl"))
 (read-tdl-lex-rule-file-aux (lkb-pathname (parent-directory) "lrules.tdl"))
-(read-morph-file-aux (lkb-pathname (parent-directory) "my-irules-02.tdl"))
+(read-morph-file-aux (lkb-pathname (parent-directory) "my-irules-01.tdl"))
 
 
 ;;;
