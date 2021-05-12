@@ -5,7 +5,17 @@
 ; e.g.:
 ; ate VERB_eat PAST
 
-slept pst-lex-rule sleeped
-slept past-part-lex-rule sleeped
+
+slept PST-SUFFIX sleep
+slept PAST-PART-SUFFIX sleep
+dreamed PST-SUFFIX dream
+dreamt PST-SUFFIX dream
+dreamed PAST-PART-SUFFIX dream
+dreamt PAST-PART-SUFFIX dream
+fell PST-SUFFIX fall
+fallen PAST-PART-SUFFIX fall
+found PST-SUFFIX find
+found PAST-PART-SUFFIX find
+
 
 "

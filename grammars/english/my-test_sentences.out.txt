@@ -1,0 +1,60 @@
+1 the cat sleeps 1 22
+2 the dog chases the cat 1 37
+3 the dogs chase the cat 1 39
+4 the cats sleep 1 23
+5 *the cats sleeps 0 17
+6 *the dogs chases the cat 0 28
+7 *the cat sleep 0 16
+8 *the dog chase the cat 0 28
+9 *the cat sleeped 0 11
+10 the dog barked 1 24
+11 the dogs barked 1 25
+12 the dogs chased the cat 1 41
+13 the dog chased the cats 1 41
+14 *the dog chaseed the cat 0 21
+15 the dog followed the cat 1 40
+16 *the dog sleeps the cat 0 27
+17 *the dog chased 0 17
+18 *the dog chases 0 16
+19 the dog is following the cat 1 40
+20 the dog has followed the cat 1 44
+21 the dog will follow the cat 1 42
+22 *the dog has following the cat 0 28
+23 *the dog is followed the cat 0 32
+24 *the dog is follow the cat 0 30
+25 *the dog has follow the cat 0 30
+26 *the dog will following the cat 0 28
+27 *the dog will followed the cat 0 32
+28 the dog has barked 1 28
+29 the dog has slept 1 28
+30 *the dog has sleeped 0 14
+31 the dog has chased the cat 1 44
+32 *the dog has chaseed the cat 0 24
+33 the dog can bark 1 26
+34 the dog can chase the cat 1 42
+35 *the dog can barked 0 20
+36 *the dog can barking 0 17
+37 the cat must sleep 1 26
+38 the boy's dog sleeps 1 34
+39 the boys' dog sleeps 1 33
+40 *the boys's dog sleeps 0 16
+41 the dog of the boy sleeps 1 44
+42 the dog dreamed 1 24
+43 *the dog finded the cat 0 21
+44 *the dog felled 0 11
+45 the dog has slept 1 28
+46 the cat slept 1 24
+47 *the dog has sleeped 0 14
+48 *the cat sleeped 0 11
+49 the dog fell 1 20
+50 the dog has fallen 1 25
+51 *the dog has felled 0 14
+52 the dog found the cat 1 40
+53 the dog has found the cat 1 44
+54 the dog has dreamed 1 28
+55 the dog has dreamt 1 28
+56 the dog dreamt 1 24
+
+;;; Total CPU time: 217 msecs
+;;; Mean edges: 27.34
+;;; Mean parses: 0.55

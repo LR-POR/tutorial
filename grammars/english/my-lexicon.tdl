@@ -1,0 +1,88 @@
+;;; -*- Mode: TDL; Coding: utf-8 -*-
+;;; Nouns
+
+dog := CommonNoun-noun-lex &
+  [ STEM < "dog" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_dog_n_rel" ].
+
+cat := CommonNoun-noun-lex &
+  [ STEM < "cat" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_cat_n_rel" ].
+
+boy := CommonNoun-noun-lex &
+  [ STEM < "boy" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_boy_n_rel" ].
+
+girl := CommonNoun-noun-lex &
+  [ STEM < "girl" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_girl_n_rel" ].
+
+;;; Adjectives
+
+;;; Verbs
+
+chase := trans-v-verb-lex &
+  [ STEM < "chase" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_chase_v_rel" ].
+
+kill := trans-v-verb-lex &
+  [ STEM < "kill" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_kill_v_rel" ].
+
+find := trans-v-verb-lex &
+  [ STEM < "find" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_find_v_rel" ].
+
+love := trans-v-verb-lex &
+  [ STEM < "love" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_love_v_rel" ].
+
+follow := trans-v-verb-lex &
+  [ STEM < "follow" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_follow_v_rel" ].
+
+sleep := intrans-v-verb-lex &
+  [ STEM < "sleep" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_sleep_v_rel" ].
+
+bark := intrans-v-verb-lex &
+  [ STEM < "bark" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_bark_v_rel" ].
+
+dream := intrans-v-verb-lex &
+  [ STEM < "dream" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_dream_v_rel" ].
+
+fall := intrans-v-verb-lex &
+  [ STEM < "fall" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_fall_v_rel" ].
+
+;;; Auxiliaries
+
+is := progr-aux-lex &
+  [ STEM < "is" > ].
+
+has := perf-aux-lex &
+  [ STEM < "has" > ].
+
+will := fut-aux-lex &
+  [ STEM < "will" > ].
+
+can := possibility-aux-lex &
+  [ STEM < "can" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_can_v_rel" ].
+
+must := necessity-aux-lex &
+  [ STEM < "must" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_must_v_rel" ].
+
+;;; Determiners
+
+the := def-determiner-lex &
+  [ STEM < "the" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_the_q_rel" ].
+
+;;; Adverbs
+
+possessor-adp-2 := possessor-adp-lex-2 &
+  [ STEM < "of" > ].
